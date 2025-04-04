@@ -12,6 +12,7 @@ module cam(input clk,input rst,input wr_en,
       for(i=0;i<16;i=i+1) begin
         mem[i]<=0;
       end
+    end
       else if(wr_en) begin
         mem[wr_addr]<=wr_data;
       end
