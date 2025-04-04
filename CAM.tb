@@ -1,0 +1,26 @@
+module cam_tb();
+reg clk;
+reg rst;
+reg wr_en;
+reg [7:0] srch_data;
+reg [7:0] wr_data;
+reg [7:0] wr_addr;
+wire found;
+wire [3:0] srch_addr;
+cam dut(clk,rst,wr_en,srch_data,wr_data,wr_addr,found,srch_addr);
+always #5 clk=~clk;
+initial begin
+clk=0;rst=1;#10; rst=0;
+wr_en=1;
+wr_addr=0;wr_data=10;
+repeat(15) begin
+wr_addr=wraddr+1;
+wr_data=wr_data+2; #10;
+end
+srch_data=12;#10;
+srch_data=10;#10;
+srch_data=16;#10;
+srch_data=20;#10;
+$finish;
+end
+endmodule
