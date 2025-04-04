@@ -35,6 +35,11 @@ Cache Memory and Associative Lookup: Helps in CPU caches for quick tag compariso
 Security and Pattern Matching: Used in firewalls, intrusion detection, and database searches.
 
 **simulation results:**
+![image](https://github.com/user-attachments/assets/098a0d54-c65c-4c62-90cf-09478373124a)
+
+**schematic:**
+
+![image](https://github.com/user-attachments/assets/da50f2dd-1b6a-4406-a8ea-424a98ca5662)
 
 
 
